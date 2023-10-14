@@ -18,8 +18,10 @@ DockerFileには`USER node`を追記しておくことで、実行ユーザー�
 ## React×TypeScriptのプロジェクト作成
 <!-- `docker-compose run --rm frontend sh -c 'npx create-react-app frontend --template typescript'` -->
 `docker-compose run --rm frontend sh -c 'npx create-react-app frontend '`
+`docker-compose run --rm frontend sh -c 'npx create-react-app frontend --template @chakra-ui'`
 npxは、ローカルに実行可能なコマンドを探しにいきます
 TypeScriptを使いたい場合は、create-react-appのオプションに --template typescript をつける
+npx create-react-app my-app --template @chakra-ui/typescript
 
 
 ## Container作成と起動
